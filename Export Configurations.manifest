@@ -1,0 +1,10 @@
+{
+	"autodeskProduct":	"Fusion",
+	"type":	"script",
+	"author":	"Donutnz",
+	"description":	{
+		"":	"Runs through configurations and exports them."
+	},
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}

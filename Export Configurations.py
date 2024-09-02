@@ -42,12 +42,15 @@ def run(context):
 
         app.log("Beginning exporting into {}".format(targetFolderPath))
 
+        app.log("Rows: {}".format(len(topTable.rows)))
+
         for row in topTable.rows:
             app.log("Starting: {}".format(row.name))
 
             rowActSuccess=row.activate()
 
             if not rowActSuccess:
+                app.log("Failed to activate row")
                 raise Exception("Error activating row: {}".format(row.name))
 
             fileName=targetFolderPath+'/'+row.name+".step"
